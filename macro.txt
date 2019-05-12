@@ -1,0 +1,29 @@
+lulu: MACRO &y, &x, &j
+INPUT &x
+LOAD &y
+COPY &j, &y
+END
+tudo: MACRO &u, &p
+ADD &u
+SUB &p
+END
+lio: MACRO &b, &c
+LOAD &c
+tudo &b, &c
+INPUT &b
+END
+popo: MACRO &t
+SUB &t
+ADD &t
+END
+SECTION TEXT
+lulu m, l, r
+ADD a
+tudo r, k
+STORE a
+lio r, o	
+OUTPUT a
+SECTION DATA
+m: SPACE
+l: space
+r: space	
